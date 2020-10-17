@@ -2,46 +2,46 @@ import React from 'react';
 
 function HomePage() {
   return (
-    <main className="center" id="main">
+    <div class="container center">
 
-        <div className="page-area">
+        <div class="page-area">
 
-            <article>
+            <div class="text-box">
                 <h1>Stay on track</h1>
-                <p>
+                <p id="main" >
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </article>
+            </div>
     
-            <article>
+            <div class="text-box">
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
-            </article>
+            </div>
     
-            <article>
+            <div class="text-box">
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </article>
+            </div>
     
-            <article>
-                <h1>Free</h1>
+            <div class="text-box">
+                <h1>Graph</h1>
                 <p>
-                    This app is free!!! And you are the only one holding your data!
+                    <canvas id ="myChart" width="400" height="400"></canvas>
                 </p>
-            </article>
+            </div>
     
-            
+
         </div>
 
-    </main>
+    </div>
   );
 }
 
